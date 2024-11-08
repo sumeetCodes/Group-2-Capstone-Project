@@ -13,6 +13,18 @@
     text-decoration:underline !important;
 }
 
+.list_desc_span{
+    font-size: small !important;
+}
+
+/* .display_icon_none{
+    display: none !important;
+} */
+
+
+
+
+
 
 /* Styles for screens that are 768px or wider */
 @media (min-width:768px) and (max-width:1200px) {
@@ -24,5 +36,40 @@
     .nav_item_space{
         margin:0px 12px;
     }
+
     
 }
+
+@media (min-width:576px) and (max-width:786px) {
+    
+}
+
+@media (min-width:300px) and (max-width:620px){
+    .display_search_input{
+        display: none !important;
+    }
+
+    .display_search_none{
+        display:inline !important;
+    }
+
+    .display_icon_none{
+        display: none !important;
+    }
+
+
+}
+
+
+
+@media (min-width:621px) and (max-width:1200px) {
+        
+    .display_search_none{
+        display:none !important;
+    }
+    
+}
+
+
+
+

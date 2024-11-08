@@ -50,7 +50,7 @@
             <!-- website logo -->
             <div>
               <i
-                class="bi bi-cart2 bg-danger text-light rounded-circle px-1 fs-2"
+                class="bi bi-cart2 bg-danger text-light rounded-circle px-1 fs-2 display_icon_none"
               ></i>
               <a class="navbar-brand text-light fw-bold fs-2" href="index.html"
                 >Cartzilla</a
@@ -58,7 +58,7 @@
             </div>
 
             <!-- search -->
-            <div>
+            <div class="display_search_input">
               <input
                 class="input_width me-2 rounded-pill p-2 nav_bg_color text-light border border-white"
                 type="search"
@@ -69,6 +69,7 @@
 
             <!-- website things -->
             <div class="">
+              <!-- sun -->
               <a
                 class="icon-link icon-link-hover"
                 style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
@@ -77,34 +78,51 @@
                 <svg class="bi" aria-hidden="true">
                   <use xlink:href="#clipboard"></use>
                 </svg>
-                <i class="bi bi-brightness-high text-light me-2 fs-5"></i>
+                <i
+                  class="bi bi-brightness-high text-light me-1 fs-5"
+                ></i>
               </a>
 
+              <!-- person -->
               <a
-                class="icon-link icon-link-hover"
+                class="icon-link icon-link-hover display_icon_none"
                 style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
                 href="#"
               >
                 <svg class="bi" aria-hidden="true">
                   <use xlink:href="#clipboard"></use>
                 </svg>
-                <i class="bi bi-person text-light me-2 fs-5"></i>
+                <i
+                  class="bi bi-person text-light me-1 fs-5"
+                ></i>
               </a>
-
+              <!-- search -->
               <a
-                class="icon-link icon-link-hover"
+                class="icon-link icon-link-hover display_search_none"
                 style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
                 href="#"
               >
                 <svg class="bi" aria-hidden="true">
                   <use xlink:href="#clipboard"></use>
                 </svg>
-                <i class="bi bi-heart text-light me-2 fs-5"></i>
+                <i class="bi bi-search text-light me-1 fs-5"></i>
               </a>
 
+              <!-- heart -->
+              <a
+                class="icon-link icon-link-hover display_icon_none"
+                style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
+                href="#"
+              >
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#clipboard"></use>
+                </svg>
+                <i class="bi bi-heart text-light me-1 fs-5"></i>
+              </a>
+              <!-- shop -->
               <a class="text-light text-decoration-none" href=""
                 ><i
-                  class="bi bi-cart2 text-light rounded-circle py-1 px-2 fs-4 bg-dark"
+                  class="bi bi-cart2 text-light rounded-circle py-1 px-2 fs-4 bg-dark ms-2"
                 ></i
               ></a>
             </div>
@@ -113,114 +131,265 @@
           <!-- second -->
           <nav class="navbar navbar-expand-lg nav_bg_color">
             <div class="container-fluid">
-              
               <!-- <a class="navbar-brand text-light" href="#"><i class="bi bi-grid-fill me-2"></i>Categoties</a> -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                  <li class="nav-item dropdown nav_item_space nav_item_underline">
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="bi bi-grid-fill me-2"></i>Categoties 
+                  <li
+                    class="nav-item dropdown nav_item_space nav_item_underline"
+                  >
+                    <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="bi bi-grid-fill me-2"></i>Categoties
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
                     </ul>
                   </li>
 
-                  <li class="nav-item dropdown nav_item_space nav_item_underline">
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Home
+                  <!-- home nav item  -->
+                  <li
+                    class="nav-item dropdown nav_item_space nav_item_underline"
+                  >
+                    <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Home
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Electronics Store</a>
+                        <span class="list_desc_span ms-2 text-secondary"
+                          >Megamenu + Hero slider</span
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Fashion Store v.1</a>
+                        <span class="list_desc_span ms-4 text-secondary"
+                          >Hero promo slider</span
+                        >
+                      </li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                      <li>
+                        <a class="dropdown-item" href="#">Fashion Store v.2</a>
+                        <span class="list_desc_span text-secondary ms-2"
+                          >Hero banner with hotspots</span
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Funiture Store</a>
+                        <span class="list_desc_span ms-2 text-secondary"
+                          >Fancy product carousel</span
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Grocery Store</a>
+                        <span class="list_desc_span text-secondary ms-3"
+                          >Category Card</span
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Marketplace</a>
+                        <span class="list_desc_span text-secondary ms-3"
+                          >Multi vendor,goods</span
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Single Product Store</a
+                        >
+                        <span class="list_desc_span text-secondary ms-1"
+                          >Single Product/mono brand</span
+                        >
+                      </li>
                     </ul>
                   </li>
 
-                  <li class="nav-item dropdown nav_item_space nav_item_underline">
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Shop
+                  <!-- shop nav item -->
+                  <li
+                    class="nav-item dropdown nav_item_space nav_item_underline"
+                  >
+                    <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Shop
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#"></a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <!-- <li><hr class="dropdown-divider" /></li> -->
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
                     </ul>
                   </li>
 
-                  <li class="nav-item dropdown nav_item_space nav_item_underline">
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Account
+                  <!-- Account nav item -->
+                  <li
+                    class="nav-item dropdown nav_item_space nav_item_underline"
+                  >
+                    <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Account
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Auth Pages</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Shop User</a>
+                      </li>
+                      <!-- <li><hr class="dropdown-divider" /></li> -->
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Marketplace User</a
+                        >
+                      </li>
                     </ul>
                   </li>
 
-                  <li class="nav-item dropdown nav_item_space nav_item_underline">
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Pages
+                  <!-- Pages nav item -->
+                  <li
+                    class="nav-item dropdown nav_item_space nav_item_underline"
+                  >
+                    <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Pages
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">About</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Blog</a>
+                      </li>
+                      <!-- <li><hr class="dropdown-divider" /></li> -->
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Contact</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Help Center</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">404 error</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Terms & conditions</a>
+                      </li>
+
                     </ul>
                   </li>
 
                   <li class="nav-item nav_item_space nav_item_underline">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Docs</a>
+                    <a
+                      class="nav-link active text-light"
+                      aria-current="page"
+                      href="#"
+                      >Docs</a
+                    >
                   </li>
                   <li class="nav-item nav_item_space nav_item_underlin">
                     <a class="nav-link text-light" href="#">Components</a>
                   </li>
-                  
-                  <li class="nav-item dropdown nav_item_space nav_item_underline">
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Eng
+
+                  <!-- Eng nav item -->
+                  <li
+                    class="nav-item dropdown nav_item_space nav_item_underline"
+                  >
+                    <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Eng
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Fransius</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Deutsch</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >italiano</a
+                        >
+                      </li>
                     </ul>
                   </li>
 
-                  <li class="nav-item dropdown nav_item_space nav_item_underline">
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    USD ($)
+                  <!-- usd nav item -->
+                  <li
+                    class="nav-item dropdown nav_item_space nav_item_underline"
+                  >
+                    <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      USD ($)
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">EUR</a></li>
                       <li><a class="dropdown-item" href="#">UKP</a></li>
-                      <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">JPY</a></li>
                     </ul>
                   </li>
-                  
                 </ul>
               </div>
             </div>
           </nav>
-
-
         </div>
       </section>
     </header>
+
+    <script src="../js_files/main.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
