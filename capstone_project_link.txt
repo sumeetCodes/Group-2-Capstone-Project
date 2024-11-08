@@ -1,0 +1,8 @@
+https://themes.getbootstrap.com/preview/?theme_id=35287
+
+https://fakestoreapi.com/users
+
+electronics home page
+shopping cart page
+sign upwith validation page
+sign up with alidation page
