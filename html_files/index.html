@@ -24,85 +24,9 @@
   <body>
     <!-- navbar -->
 
-    <header class="nav_bg_color">
-      <section>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <div>
-              <i
-                class="bi bi-cart2 bg-danger text-light rounded-circle px-1 fs-2"
-              ></i>
-              <a class="navbar-brand text-light fw-bold fs-2" href="index.html"
-                >Cartzilla</a
-              >
-            </div>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <!-- -->
-              <div class="">
-                <input
-                  class="me-2 rounded-pill p-2 nav_bg_color text-light border border-white"
-                  type="search"
-                  placeholder="Search the products"
-                  aria-label="Search"
-                />
-                <a
-                  class="icon-link icon-link-hover"
-                  style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
-                  href="#"
-                >
-                  <svg class="bi" aria-hidden="true">
-                    <use xlink:href="#clipboard"></use>
-                  </svg>
-                  <i class="bi bi-brightness-high text-light me-2 fs-5"></i>
-                </a>
+    <!-- nav-items -->
 
-                <a
-                  class="icon-link icon-link-hover"
-                  style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
-                  href="#"
-                >
-                  <svg class="bi" aria-hidden="true">
-                    <use xlink:href="#clipboard"></use>
-                  </svg>
-                  <i class="bi bi-person text-light me-2 fs-5"></i>
-                </a>
-
-                <a
-                  class="icon-link icon-link-hover"
-                  style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
-                  href="#"
-                >
-                  <svg class="bi" aria-hidden="true">
-                    <use xlink:href="#clipboard"></use>
-                  </svg>
-                  <i class="bi bi-heart text-light me-2 fs-5"></i>
-                </a>
-
-                <a class="text-light text-decoration-none" href=""
-                  ><i
-                    class="bi bi-cart2 text-light rounded-circle py-1 px-2 fs-4 bg-dark"
-                  ></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </section>
-
-      <!-- nav-items -->
-
-      <section class="">
+    <!-- <section class="">
         <div class="d-flex">
           <ul class="list_style_none nav_items text-light d-flex">
             <li class=""><i class="bi bi-grid-fill me-2"></i>Categories</li>
@@ -115,6 +39,110 @@
             <li class="px-2">Eng</li>
             <li class="px-2">Shop</li>
           </ul>
+        </div>
+      </section> -->
+
+    <header class="nav_bg_color">
+      <section>
+        <div class="container-fluid p-2">
+          <!-- first -->
+          <div class="d-flex justify-content-around align-items-center">
+            <!-- website logo -->
+            <div>
+              <i
+                class="bi bi-cart2 bg-danger text-light rounded-circle px-1 fs-2"
+              ></i>
+              <a class="navbar-brand text-light fw-bold fs-2" href="index.html"
+                >Cartzilla</a
+              >
+            </div>
+
+            <!-- search -->
+            <div>
+              <input
+                class="input_width me-2 rounded-pill p-2 nav_bg_color text-light border border-white"
+                type="search"
+                placeholder="Search the products"
+                aria-label="Search"
+              />
+            </div>
+
+            <!-- website things -->
+            <div class="">
+              <a
+                class="icon-link icon-link-hover"
+                style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
+                href="#"
+              >
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#clipboard"></use>
+                </svg>
+                <i class="bi bi-brightness-high text-light me-2 fs-5"></i>
+              </a>
+
+              <a
+                class="icon-link icon-link-hover"
+                style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
+                href="#"
+              >
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#clipboard"></use>
+                </svg>
+                <i class="bi bi-person text-light me-2 fs-5"></i>
+              </a>
+
+              <a
+                class="icon-link icon-link-hover"
+                style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
+                href="#"
+              >
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#clipboard"></use>
+                </svg>
+                <i class="bi bi-heart text-light me-2 fs-5"></i>
+              </a>
+
+              <a class="text-light text-decoration-none" href=""
+                ><i
+                  class="bi bi-cart2 text-light rounded-circle py-1 px-2 fs-4 bg-dark"
+                ></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- second -->
+          <nav class="navbar navbar-expand-lg nav_bg_color">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="#"><i class="bi bi-grid-fill me-2"></i>Categoties</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
         </div>
       </section>
     </header>
