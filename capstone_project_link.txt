@@ -6,3 +6,5 @@ electronics home page
 shopping cart page
 sign upwith validation page
 sign up with alidation page
+
+https://github.com/sumeetCodes/Group-2-Capstone-Project.git
