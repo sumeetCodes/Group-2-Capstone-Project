@@ -9,12 +9,20 @@
     list-style: none !important;
 }
 
+.nav-item_underline:hover{
+    text-decoration:underline !important;
+}
+
 
 /* Styles for screens that are 768px or wider */
 @media (min-width:768px) and (max-width:1200px) {
 
     .input_width{
         width:400px !important;
+    }
+
+    .nav_item_space{
+        margin:0px 12px;
     }
     
 }
