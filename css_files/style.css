@@ -22,9 +22,6 @@
     cursor: pointer;
 }
 
-.hero_menu_width{
-    width:180px !important;
-}
 
 
 
@@ -39,6 +36,19 @@
         margin:0px 12px;
     }
 
+    .hero_menu_width{
+        width:180px !important;
+    }
+
+    .hero_img_space{
+        margin-left: 80px !important;
+    }
+
+    .hero_img_width{
+        width:600px !important;
+        height:500px !important;
+    }
+    
     
 }
 
