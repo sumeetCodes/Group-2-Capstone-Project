@@ -21,8 +21,13 @@
     display: none !important;
 } */
 
+.hover_para:hover{
+    cursor: pointer;
+}
 
-
+.hero_menu_width{
+    width:180px !important;
+}
 
 
 
