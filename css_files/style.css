@@ -24,6 +24,11 @@
     width:50px !important;
 }
 
+/* .hero_card_icon_space{
+  margin-left:105px !important;
+} */
+
+
 /* Styles for screens that are 768px or wider */
 @media (min-width: 768px) and (max-width: 1200px) {
   .input_width {
@@ -48,12 +53,30 @@
   }
 
   .hero_card_icon_space{
-    margin-left:80px !important;
+    margin-left:105px !important;
   }
 
 }
 
-@media (min-width: 576px) and (max-width: 786px) {
+@media (min-width: 576px) and (max-width: 766px) {
+
+  .hero_card_icon_space{
+    margin-left:345px !important;
+  }
+
+
+
+}
+
+
+@media (min-width: 576px) and (max-width: 766px) {
+
+  .hero_card_icon_space{
+    margin-left:345px !important;
+  }
+
+
+
 }
 
 @media (min-width: 300px) and (max-width: 620px) {
@@ -68,10 +91,13 @@
   .display_icon_none {
     display: none !important;
   }
+
+  
 }
 
 @media (min-width: 621px) and (max-width: 1200px) {
   .display_search_none {
     display: none !important;
   }
+
 }
