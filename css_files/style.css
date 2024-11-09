@@ -20,6 +20,10 @@
   cursor: pointer;
 }
 
+.hero_card_icon_bg{
+    width:50px !important;
+}
+
 /* Styles for screens that are 768px or wider */
 @media (min-width: 768px) and (max-width: 1200px) {
   .input_width {
@@ -42,6 +46,11 @@
     width: 600px !important;
     height: 500px !important;
   }
+
+  .hero_card_icon_space{
+    margin-left:80px !important;
+  }
+
 }
 
 @media (min-width: 576px) and (max-width: 786px) {
