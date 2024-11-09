@@ -1,87 +1,68 @@
-
 /* Nav bar color */
 
-.nav_bg_color{
-    background-color: #222934 !important;
+.nav_bg_color {
+  background-color: #222934 !important;
 }
 
-.list_style_none{
-    list-style: none !important;
+.list_style_none {
+  list-style: none !important;
 }
 
-.nav-item_underline:hover{
-    text-decoration:underline !important;
+.nav-item_underline:hover {
+  text-decoration: underline !important;
 }
 
-.list_desc_span{
-    font-size: small !important;
+.list_desc_span {
+  font-size: small !important;
 }
 
-
-.hover_para:hover{
-    cursor: pointer;
+.hover_para:hover {
+  cursor: pointer;
 }
-
-
-
 
 /* Styles for screens that are 768px or wider */
-@media (min-width:768px) and (max-width:1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+  .input_width {
+    width: 400px !important;
+  }
 
-    .input_width{
-        width:400px !important;
-    }
+  .nav_item_space {
+    margin: 0px 12px;
+  }
 
-    .nav_item_space{
-        margin:0px 12px;
-    }
+  .hero_menu_width {
+    width: 180px !important;
+  }
 
-    .hero_menu_width{
-        width:180px !important;
-    }
+  .hero_img_space {
+    margin-left: 80px !important;
+  }
 
-    .hero_img_space{
-        margin-left: 80px !important;
-    }
-
-    .hero_img_width{
-        width:600px !important;
-        height:500px !important;
-    }
-    
-    
+  .hero_img_width {
+    width: 600px !important;
+    height: 500px !important;
+  }
 }
 
-@media (min-width:576px) and (max-width:786px) {
-    
+@media (min-width: 576px) and (max-width: 786px) {
 }
 
-@media (min-width:300px) and (max-width:620px){
-    .display_search_input{
-        display: none !important;
-    }
+@media (min-width: 300px) and (max-width: 620px) {
+  .display_search_input {
+    display: none !important;
+  }
 
-    .display_search_none{
-        display:inline !important;
-    }
+  .display_search_none {
+    display: inline !important;
+  }
 
-    .display_icon_none{
-        display: none !important;
-    }
-
-
+  .display_icon_none {
+    display: none !important;
+  }
 }
 
-
-
-@media (min-width:621px) and (max-width:1200px) {
-        
-    .display_search_none{
-        display:none !important;
-    }
-    
+@media (min-width: 621px) and (max-width: 1200px) {
+  .display_search_none {
+    display: none !important;
+  }
 }
-
-
-
-
