@@ -28,6 +28,42 @@
   margin-left:105px !important;
 } */
 
+  /* Sale banner */
+
+  .bg_color_light_blue{
+    background-color: #accbee !important;
+  }
+
+  .bg_color_little_blue{
+    background-color: #1b273a !important;
+  }
+
+  .bg_color_light_blue_gradient{
+    background-color: linear-gradient(90deg, #accbee 0%, #e7f0fd 100%) !important;
+  }
+
+  .bg_color_little_blue_gradient{
+    background-color: linear-gradient(90deg, #1b273a 0%, #1f2632 100%) !important;
+  }
+
+  .sales_svg_styling{
+    color: var(--cz-body-bg) !important;
+    margin-left: -2px;
+  }
+
+  .sales_camera_img_styling{
+    margin-bottom: -9% !important;
+  }
+
+  .sales_pb{
+    padding-bottom: 3% !important;
+  }
+
+  /* special offer section */
+  .special_cart_hover:hover{
+    background-color: red !important;
+    cursor: pointer;
+  }
 
 /* Styles for screens that are 768px or wider */
 @media (min-width: 768px) and (max-width: 1200px) {

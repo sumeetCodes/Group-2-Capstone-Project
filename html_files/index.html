@@ -833,10 +833,12 @@
       </h2>
         <i class="bi bi-cart text-light rounded-3 py-1 px-2 fs-4 bg-dark ms-5"></i> 
       </div>
+      <div class="text-start">
       <span
         class="fs-5 text-secondary text-decoration-line-through ms-1"
         >$430.00</span
       >
+    </div>
   </div>
 </div>
 
@@ -1085,7 +1087,393 @@
       </div>
      </section>
 
-     <!--  -->
+     <!-- Sale Banner -->
+     <section class="container pt-5 mt-sm-2 mt-md-3 mt-lg-4">
+      <!-- g-0 is used remove all gutters (the spacing between columns) within a row. -->
+          <!-- g-0  Removes gutters (no space between columns). -->
+      <div class="row g-0">
+  <!-- mb-n4: Margin bottom with a negative value, which reduces the space below this column. -->
+   <!-- mb-md-0: Margin bottom is reset to zero on medium or larger screens. -->
+        <div class="col-md-3 mb-n4 mb-md-0">  
+        <!-- flex-column: Arranges the flex items (children) in a vertical column. -->
+          <div class="position-relative d-flex flex-column align-items-center justify-content-center h-100 py-5">
+<!-- d-none d-md-block: Initially, this element is hidden (d-none) on smaller screens, but shown as a block (d-md-block) on medium screens or larger. -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-none d-md-block">
+              <!-- d-none for smaller screens with d-block-dark for block display on dark-themed blocks. -->
+              <span class="position-absolute top-0 start-0 w-100 h-100 rounded-5 d-none-dark bg_color_light_blue"></span>
+              <span class="position-absolute top-0 start-0 w-100 h-100 rounded-5 d-none d-block-dark bg_color_little_blue"></span>
+            </div>
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-md-none">
+              <span class="position-absolute top-0 start-0 w-100 h-100 rounded-top-5 d-none-dark bg_color_light_blue_gradient" style="background: linear-gradient(90deg, #accbee 0%, #e7f0fd 100%)"></span>
+              <span class="position-absolute top-0 start-0 w-100 h-100 rounded-top-5 d-none d-block-dark bg_color_little_blue_gradient"></span>
+            </div>
+            <div class="position-relative z-1 fw-bold display-1 text-dark text-nowrap mb-0">
+              20
+              <span class="d-inline-block ms-n2">
+                <span class="d-block fs-1">%</span>
+                <span class="d-block fs-5">OFF</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Second Block (Main Content) -->
+        <div class="col-md-9 position-relative">
+<!-- h-100 overflow-hidden: Sets the height to 100% and hides any content that overflows the element’s bounds. -->
+          <div class="position-absolute top-0 start-0 h-100 overflow-hidden rounded-pill z-2 d-none d-md-block sales_svg_styling">
+            <svg width="4" height="436" viewBox="0 0 4 436" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 0L1.99998 436" stroke="currentColor" stroke-width="3" stroke-dasharray="8 12" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <!-- Content of the Main Section (Text and Image) -->
+          <div class="position-relative">
+            <span class="position-absolute top-0 start-0 w-100 h-100 rounded-5 d-none-dark rtl-flip bg_color_light_blue_gradient" style="background: linear-gradient(90deg, #accbee 0%, #e7f0fd 100%)"></span>
+            <span class="position-absolute top-0 start-0 w-100 h-100 rounded-5 d-none d-block-dark rtl-flip bg_color_little_blue_gradient"></span>
+            <div class="row align-items-center position-relative z-2">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <div class="text-center text-md-start py-md-5 px-4 ps-md-5 pe-md-0 me-md-n5">
+                  <h3 class="text-uppercase fw-bold ps-xxl-3 pb-2 mb-1">Seasonal weekly sale 2024</h3>
+                  <p class="text-body-emphasis ps-xxl-3 mb-0">Use code <span class="d-inline-block fw-semibold bg-white text-dark rounded-pill py-1 px-2">Sale 2024</span> to get best offer</p>
+                </div>
+              </div>
+              <!-- Image and closing Tag -->
+              <div class="col-md-6 d-flex justify-content-center justify-content-md-end pb-5 pb-md-0">
+                <div class="me-xxl-4">
+<!-- d-block rtl-flip: Forces the image to be block-level and flips it for right-to-left (RTL) languages. -->
+                  <img src="../Imgs/camera.png" class="d-block rtl-flip" width="420" alt="Camera">
+                  <div class="d-none d-lg-block sales_camera_img_styling"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-lg-block sales_pb"></div>
+    </section>
+
+
+  <!-- special offer section -->
+  <section>
+    <div class="container mt-5">
+<div class="row">
+
+<!-- special offer sec heading -->
+ <div class="">
+  <div class="d-flex justify-content-between align-items-center flex-wrap">
+<h2 class="fw-bold">Special offer for you</h2>
+<!-- time -->
+<p>View ALL<span class="ms-1">></span></p>
+</div>
+<hr>
+ </div>
+
+ <!-- special offer sec products -->
+<div class="">
+ 
+  <!-- products of special offer -->
+
+<!-- carousel -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- First carousel item (showing multiple products in a row) -->
+    <div class="carousel-item active">
+      <div class="row">
+        <!-- 1st Special offer product -->
+        <div class="col-6 col-md-3 mb-3">
+          <div class="trending_product_sm_space">
+            <img src="../Imgs/arrival_right_img_2.png" alt="VRB01 Virtual Reality" class="d-block w-100">
+            <div class="ms-3">
+              <div>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star text-secondary"></i>
+                <span class="text-secondary ms-2">(123)</span>
+              </div>
+              <h4 class="fs-6">VRB01 Virtual Reality G..</h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-bolder">$340.00</h2>
+                <i class="bi bi-cart special_cart_hover text-light rounded-3 py-1 px-2 fs-4 bg-dark ms-5"></i>
+              </div>
+              <div class="text-start">
+                <span class="fs-5 text-secondary text-decoration-line-through ms-1">$430.00</span>
+              </div>
+              <!-- progressbar -->
+                <div class="progress mt-1" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped bg-danger" style="width: 25%"></div>
+                </div>
+                <!-- availablity -->
+               <div class="mt-1">
+                <p class="text-secondary">Available:<span class="text-dark">16</span></p>
+               </div> 
+            
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd Special offer product -->
+        <div class="col-6 col-md-3 mb-3">
+          <div class="trending_product_sm_space">
+            <img src="../Imgs/arrival_right_img_8.png" alt="Apple iPhone 14" class="d-block w-100">
+            <div class="ms-3">
+              <div>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-half text-warning"></i>
+                <span class="text-secondary ms-2">(142)</span>
+              </div>
+              <h4 class="fs-6">Apple iPhone 14 128GB..</h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-bolder">$652.00</h2>
+                <i class="bi bi-cart special_cart_hover text-light rounded-3 py-1 px-2 fs-4 bg-dark ms-5"></i>
+              </div>
+              <div class="text-start">
+                <span class="fs-5 text-secondary text-decoration-line-through ms-1">$785.00</span>
+              </div>
+              <!-- progressbar -->
+              <div class="progress mt-1" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-danger" style="width: 25%"></div>
+              </div>
+              <!-- availablity -->
+             <div class="mt-1">
+              <p class="text-secondary">Available:<span class="text-dark">7</span></p>
+             </div> 
+            </div>
+          </div>
+        </div>
+
+        <!-- 3rd Special offer product -->
+        <div class="col-6 col-md-3 mb-3">
+          <div class="trending_product_sm_space">
+            <img src="../Imgs/arrival_right_img_1.png" alt="Smart Watch Series 7" class="d-block w-100">
+            <div class="ms-3">
+              <div>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <span class="text-secondary ms-2">(67)</span>
+              </div>
+              <h4 class="fs-6">Smart Watch Series 7, W..</h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-bolder">$429.00</h2>
+                <i class="bi bi-cart special_cart_hover text-light rounded-3 py-1 px-2 fs-4 bg-dark ms-5"></i>
+              </div>
+              <div class="text-start">
+                <span class="fs-5 text-secondary text-decoration-line-through ms-1">$486.00</span>
+              </div>
+              <!-- progressbar -->
+              <div class="progress mt-1" role="progressbar" aria-label="Success striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-danger" style="width: 50%"></div>
+              </div>
+              <!-- availablity -->
+             <div class="mt-1">
+              <p class="text-secondary">Available:<span class="text-dark">45</span></p>
+             </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4th Special offer product -->
+        <div class="col-6 col-md-3 mb-3">
+          <div class="trending_product_sm_space">
+            <img src="../Imgs/special_nikon_camera.png" alt="Smart Watch Series 7" class="d-block w-100">
+            <div class="ms-3">
+              <div>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <span class="text-secondary ms-2">(67)</span>
+              </div>
+              <h4 class="fs-6">VRB01 Camera Nikon..</h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-bolder">$652.00</h2>
+                <i class="bi bi-cart special_cart_hover text-light rounded-3 py-1 px-2 fs-4 bg-dark ms-5"></i>
+              </div>
+              <div class="text-start">
+                <span class="fs-5 text-secondary text-decoration-line-through ms-1">$786.00</span>
+              </div>
+              <!-- progressbar -->
+              <div class="progress mt-1" role="progressbar" aria-label="Success striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-danger" style="width: 75%"></div>
+              </div>
+              <!-- availablity -->
+             <div class="mt-1">
+              <p class="text-secondary">Available:<span class="text-dark">13</span></p>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second carousel item (showing multiple products in a row) -->
+    <div class="carousel-item">
+      <div class="row">
+        <!-- 5th Special offer product -->
+        <div class="col-6 col-md-3 mb-3">
+          <div class="trending_product_sm_space">
+            <img src="../Imgs/arrival_right_img_4.png" alt="VRB01 Virtual Reality" class="d-block w-100">
+            <div class="ms-3">
+              <div>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star text-secondary"></i>
+                <span class="text-secondary ms-2">(123)</span>
+              </div>
+              <h4 class="fs-6">Laptop Apple MacBook P..</h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-bolder">$840.00</h2>
+                <i class="bi bi-cart text-light rounded-3 py-1 px-2 fs-4 bg-dark ms-5"></i>
+              </div>
+              <div class="text-start">
+                <span class="fs-5 text-secondary text-decoration-line-through ms-1">$1230.00</span>
+              </div>
+             
+              <!-- progressbar -->
+              <div class="progress mt-1" role="progressbar" aria-label="Success striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-danger" style="width: 50%"></div>
+              </div>
+              <!-- availablity -->
+             <div class="mt-1">
+              <p class="text-secondary">Available:<span class="text-dark">45</span></p>
+             </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6th Special offer product -->
+        <div class="col-6 col-md-3 mb-3">
+          <div class="trending_product_sm_space">
+            <img src="../Imgs/special_xiaomi_earbuds.png" alt="VRB01 Virtual Reality" class="d-block w-100">
+            <div class="ms-3">
+              <div>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star text-secondary"></i>
+                <span class="text-secondary ms-2">(123)</span>
+              </div>
+              <h4 class="fs-6">Xiaomi Wireless Buds..</h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-bolder">$129.00</h2>
+                <i class="bi bi-cart special_cart_hover text-light rounded-3 py-1 px-2 fs-4 bg-dark ms-5"></i>
+              </div>
+              <div class="text-start">
+                <span class="fs-5 text-secondary text-decoration-line-through ms-1">$156.00</span>
+              </div>
+              
+              <!-- progressbar -->
+              <div class="progress mt-3" role="progressbar" aria-label="Success striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-danger" style="width: 50%"></div>
+              </div>
+              <!-- availablity -->
+             <div class="mt-1">
+              <p class="text-secondary">Available:<span class="text-dark">121</span></p>
+             </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- 7th Special offer product -->
+         <div class="col-6 col-md-3 mb-3">
+          <div class="trending_product_sm_space">
+            <img src="../Imgs/arrival_right_img_2.png" alt="VRB01 Virtual Reality" class="d-block w-100">
+            <div class="ms-3">
+              <div>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star text-secondary"></i>
+                <span class="text-secondary ms-2">(123)</span>
+              </div>
+              <h4 class="fs-6">VRB01 Virtual Reality G..</h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fw-bolder">$340.00</h2>
+                <i class="bi bi-cart special_cart_hover text-light rounded-3 py-1 px-2 fs-4 bg-dark ms-5"></i>
+              </div>
+              <div class="text-start">
+                <span class="fs-5 text-secondary text-decoration-line-through ms-1">$430.00</span>
+              </div>
+        
+              <!-- progressbar -->
+              <div class="progress mt-1" role="progressbar" aria-label="Success striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-danger" style="width: 50%"></div>
+              </div>
+              <!-- availablity -->
+             <div class="mt-1">
+              <p class="text-secondary">Available:<span class="text-dark">45</span></p>
+             </div>
+            </div>
+          </div>
+        </div>
+
+ <!-- 8th Special offer product -->
+ <div class="col-6 col-md-3 mb-3">
+  <div class="trending_product_sm_space">
+    <img src="../Imgs/arrival_right_img_5.png" alt="VRB01 Virtual Reality" class="d-block w-100">
+    <div class="ms-3">
+      <div>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star text-secondary"></i>
+        <span class="text-secondary ms-2">(123)</span>
+      </div>
+      <h4 class="fs-6">Apple Tablet Air M..</h4>
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="fw-bolder">$640.00</h2>
+        <i class="bi bi-cart special_cart_hover text-light rounded-3 py-1 px-2 fs-4 bg-dark ms-5"></i>
+      </div>
+      <div class="text-start">
+        <span class="fs-5 text-secondary text-decoration-line-through ms-1">$930.00</span>
+      </div>
+      <!-- progressbar -->
+      <div class="progress mt-1" role="progressbar" aria-label="Success striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped bg-danger" style="width: 50%"></div>
+      </div>
+      <!-- availablity -->
+     <div class="mt-1">
+      <p class="text-secondary">Available:<span class="text-dark">45</span></p>
+     </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</div>
+</div>
+    </div>
+   </section>
+
+   
+<!-- Companies section -->
+
+
 
 
     <script src="../js_files/main.js"></script>
