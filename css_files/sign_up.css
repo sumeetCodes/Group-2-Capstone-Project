@@ -1,0 +1,12 @@
+
+/*  */
+
+.forgot_hover:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.help_hover:hover{
+    cursor: pointer;
+    text-decoration: none !important;
+}
