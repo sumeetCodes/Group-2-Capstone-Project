@@ -23,9 +23,32 @@
 
 
 
-document.getElementById().addEventListener(function (e) {
+document.getElementById("inputMailPassForm").addEventListener("submit" , function (e) {
+e.preventDefault()
+
+
+let getUserEmail = document.getElementById('userInputEmail').value
+let getUserPassword = document.getElementById('userInputPassword').value
+
+if (getUserEmail && getUserPassword){
+    user = {
+        userEmail: getUserEmail,
+        userPassword: getUserPassword,
+    }
+
+    let stringObj = JSON.stringify(user)
+    localStorage.setItem("userAccountInfo", stringObj)
+
+    alert("account created successfully")
+    window.location.href = "/html_files/sign_in.html"
+} 
+
+else {
+
+    alert("wrong email or password")
+}
+
+
 })
 
 
-let getUserEmail = document.getElementById('userInputEmail')
-let getUserPassword = document.getElementById('userInputPassword')
