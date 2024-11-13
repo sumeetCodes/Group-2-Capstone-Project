@@ -72,9 +72,12 @@
       </div>
  </div>
 
+<!-- empty div for error -->
+ <!-- <div id="error"></div> -->
+
  <!-- email & password -->
   <div class="mb-3 input-group" id="emailPassInput">
-
+<form action="/" method="get" class="w-100" id="inputMailPassForm">
     <!-- email -->
     <p class="text-start fw-bold">Email</p>
 
@@ -83,6 +86,7 @@
     class="p-3 rounded-2 border border-secondary mb-4 w-100 form-control"
     placeholder=""
     id="userInputEmail"
+    required
   />
 
   <!-- password -->
@@ -92,8 +96,10 @@
     class="p-3 rounded-2 border border-secondary mb-2 w-100 form-control"
     placeholder="Minimum 8 characters"
     id="userInputPassword"
+    required
   />
 
+</form>
   </div>
 
   <!-- save pass & privacy policy-->
@@ -112,10 +118,13 @@
 
 </div>
 
-<!-- sign in button -->
-<div class="d-grid gap-2 mb-5">
-    <button class="btn btn-danger p-3" type="button">Create an account <span class="ms-2">></span></button>
+<!-- sign up button -->
+<div class="d-grid gap-2 mb-5" id="signUpBtn">
+    <button class="btn btn-danger p-3" id="createAccountBtn" type="submit">Create an account <span class="ms-2">></span></button>
   </div>
+
+
+  
 
   <!-- other option divider -->
   <div class="d-flex align-items-center my-4">
