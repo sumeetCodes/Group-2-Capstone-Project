@@ -73,21 +73,27 @@
  </div>
 
  <!-- email & password -->
-  <div class="mb-3">
+  <div class="mb-3 input-group" id="emailPassInput">
+
     <!-- email -->
     <p class="text-start fw-bold">Email</p>
+
     <input
     type="email"
-    class="p-3 rounded-2 border border-secondary mb-4 w-100"
+    class="p-3 rounded-2 border border-secondary mb-4 w-100 form-control"
     placeholder=""
+    id="userInputEmail"
   />
+
   <!-- password -->
    <p class="text-start fw-bold">Password</p>
   <input
     type="password"
-    class="p-3 rounded-2 border border-secondary mb-2 w-100"
+    class="p-3 rounded-2 border border-secondary mb-2 w-100 form-control"
     placeholder="Minimum 8 characters"
+    id="userInputPassword"
   />
+
   </div>
 
   <!-- save pass & privacy policy-->
@@ -180,7 +186,7 @@
 </section>
 
 
-<script src="../js_files/sign_in.js"></script>
+<script src="../js_files/sign_up.js"></script>
 
 <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
