@@ -28,6 +28,14 @@
   margin-left:105px !important;
 } */
 
+
+/* hero section cards */
+.hero_sec_cards{
+  width: 80px;
+  height: 80px;
+}
+
+
   /* Sale banner */
 
   .bg_color_light_blue{
