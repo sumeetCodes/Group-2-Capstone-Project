@@ -52,9 +52,50 @@ async function dataAPI() {
 
             // If the local storage data matches, log in the user and redirect
             if (stringObj.userEmail === mail && stringObj.userPassword === pass) {
+                
+                function changeGreenColor() {
+                    // Get the element by its ID
+                    let emailColorInput = document.getElementById('userEmailSignIn');
+                    let passwordColorInput = document.getElementById('userPasswordSignIn');
+
+                    // email
+                    // Change the color of the element (text color)
+                    emailColorInput.style.color = 'green';  
+                    // change the border color of the element 
+                    emailColorInput.style.borderColor = 'green';  
+
+                    // password
+                     // Change the color of the element (text color)
+                    passwordColorInput.style.color = 'green';  
+                     // change the border color of the element 
+                    passwordColorInput.style.borderColor = 'green';  
+                }
+
+                changeGreenColor()
+
+                // Redirects the user to the home page
                   window.location.href = "/html_files/index.html";
             } else {
+                
+                function changeRedColor() {
+                    // Get the element by its ID
+                    let emailColorInput = document.getElementById('userEmailSignIn');
+                    let passwordColorInput = document.getElementById('userPasswordSignIn');
 
+                   // email
+                    // Change the color of the element (text color)
+                    emailColorInput.style.color = 'red';  
+                    // change the border color of the element 
+                    emailColorInput.style.borderColor = 'red';  
+
+                    // password
+                     // Change the color of the element (text color)
+                    passwordColorInput.style.color = 'red';  
+                     // change the border color of the element 
+                    passwordColorInput.style.borderColor = '';
+                }
+
+                changeRedColor()
       // If neither the API nor local storage match, show an alert indicating invalid credentials
          alert("sorry for the trouble but your email or password not found. Please create an account first")
             }
