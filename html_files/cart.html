@@ -393,7 +393,7 @@
             <div class="">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <!-- Left side (Main Content) -->
-                <div class="col-lg-7 col-md-7 col-sm-12 mb-4"> <!-- Adjusted for responsive grid layout -->
+                <div class="col-lg-8 col-md-8 col-sm-12 mb-4"> <!-- Adjusted for responsive grid layout -->
                   <div>
                     <!-- Progress bar -->
                     <div class="mb-4">
@@ -409,19 +409,23 @@
                     <!-- Shopping items (Table) -->
                     <div>
                       <!-- table-responsive class to make table scrollable horizontally on small screens -->
-                      <div class="table-responsive mb-4"> <!-- Added table-responsive for horizontal scrolling -->
+                      <div class="table-responsive mb-4">
+                        <!-- Clear Cart Button Positioned Above the Table for Mobile -->
+                        <div class="d-block d-sm-none text-center mb-3">
+                          <button type="button" class="nav-link text-secondary text-decoration-underline text-nowrap py-3 px-0">
+                            Clear Cart
+                          </button>
+                        </div>
+                      
+                        <!-- Table Content -->
                         <table class="table mb-4">
                           <thead>
-                            <tr>
+                            <tr class="flex-wrap col-sm-12">
                               <th scope="col" class="fs-sm fw-normal py-3 ps-0"><span class="text-body">Product</span></th>
                               <th scope="col" class="text-body fs-sm fw-normal py-3 d-none d-xl-table-cell"><span class="text-body">Price</span></th>
                               <th scope="col" class="text-body fs-sm fw-normal py-3 d-none d-md-table-cell"><span class="text-body">Quantity</span></th>
                               <th scope="col" class="text-body fs-sm fw-normal py-3 d-none d-md-table-cell"><span class="text-body">Total</span></th>
-                              <th scope="col" class="py-0 px-0">
-                                <div class="nav justify-content-end">
-                                  <button type="button" class="nav-link d-inline-block text-secondary text-decoration-underline text-nowrap py-3 px-0 d-none d-md-table-cell d-md-none">Clear cart</button>
-                                </div>
-                              </th>
+                              <th scope="col" class="py-0 px-0"></th>
                             </tr>
                           </thead>
                           <tbody class="align-middle">
@@ -439,7 +443,6 @@
                                     <ul class="list-unstyled gap-1 fs-xs mb-0">
                                       <li><span class="text-body-secondary">Color:</span><span class="text-dark fw-medium">White</span></li>
                                       <li><span class="text-body-secondary">Model:</span><span class="text-dark fw-medium">128GB</span></li>
-                                      <!-- Hidden on XL screens, shows on smaller ones -->
                                       <li class="d-xl-none"><span class="text-body-secondary">Price:</span><span class="text-dark fw-medium">$899.00</span></li>
                                     </ul>
                                     <div class="count-input rounded-2 d-md-none mt-3">
@@ -450,9 +453,7 @@
                                   </div>
                                 </div>
                               </td>
-                              <!-- Price visible on small screens (d-xl-none) and hidden on larger screens -->
                               <td class="h6 py-3 d-none d-xl-table-cell">$899.00</td>
-                              <!-- Quantity column hidden on small screens, shown on md and up -->
                               <td class="py-3 d-none d-md-table-cell">
                                 <div class="count-input">
                                   <button type="button" class="btn btn-icon" data-decrement="" aria-label="Decrement quantity"><i class="ci-minus"></i></button>
@@ -460,100 +461,113 @@
                                   <button type="button" class="btn btn-icon" data-increment="" aria-label="Increment quantity"><i class="ci-plus"></i></button>
                                 </div>
                               </td>
-                              <!-- Total column hidden on small screens, shown on md and up -->
                               <td class="h6 py-3 d-none d-md-table-cell">$899.00</td>
                               <td class="text-end py-3 px-0">
                                 <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
                               </td>
                             </tr>
-      
-                             <!-- Item 2 -->
-                             <tr class="d-block d-sm-table-row">
-                                <td class="py-3 ps-0">
-                                  <div class="d-flex align-items-center">
-                                    <a class="flex-shrink-0" href="shop-product-general-electronics.html">
-                                      <img src="../imgs/arrival_right_img_4.png" width="110" alt="apple laptop" />
-                                    </a>
-                                    <div class="w-100 min-w-0 ps-2 ps-xl-3">
-                                      <h5 class="d-flex animate-underline mb-2">
-                                        <a class="d-block fs-sm fw-medium text-truncate animate-target text-decoration-none text-dark" href="shop-product-general-electronics.html">Laptop Apple MacBoo...</a>
-                                      </h5>
-                                      <ul class="list-unstyled gap-1 fs-xs mb-0">
-                                        <li><span class="text-body-secondary">Color:</span><span class="text-dark fw-medium">White</span></li>
-                                        <li><span class="text-body-secondary">Model:</span><span class="text-dark fw-medium">GB</span></li>
-                                        <!-- Hidden on XL screens, shows on smaller ones -->
-                                        <li class="d-xl-none"><span class="text-body-secondary">Price:</span><span class="text-dark fw-medium">$899.00</span></li>
-                                      </ul>
-                                      <div class="count-input rounded-2 d-md-none mt-3">
-                                        <button type="button" class="btn btn-sm btn-icon" data-decrement="" aria-label="Decrement quantity"><i class="ci-minus"></i></button>
-                                        <input type="number" class="form-control form-control-sm" value="1" readonly="" />
-                                        <button type="button" class="btn btn-sm btn-icon" data-increment="" aria-label="Increment quantity"><i class="ci-plus"></i></button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </td>
-                                <!-- Price visible on small screens (d-xl-none) and hidden on larger screens -->
-                                <td class="h6 py-3 d-none d-xl-table-cell">$899.00</td>
-                                <!-- Quantity column hidden on small screens, shown on md and up -->
-                                <td class="py-3 d-none d-md-table-cell">
-                                  <div class="count-input">
-                                    <button type="button" class="btn btn-icon" data-decrement="" aria-label="Decrement quantity"><i class="ci-minus"></i></button>
-                                    <input type="number" class="form-control" value="1" readonly="" />
-                                    <button type="button" class="btn btn-icon" data-increment="" aria-label="Increment quantity"><i class="ci-plus"></i></button>
-                                  </div>
-                                </td>
-                                <!-- Total column hidden on small screens, shown on md and up -->
-                                <td class="h6 py-3 d-none d-md-table-cell">$899.00</td>
-                                <td class="text-end py-3 px-0">
-                                  <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
-                                </td>
-                              </tr>
-      
+
+<!-- Item 2 -->
+<tr class="d-block d-sm-table-row">
+  <td class="py-3 ps-0">
+    <div class="d-flex align-items-center">
+      <a class="flex-shrink-0" href="shop-product-general-electronics.html">
+        <img src="../imgs/arrival_right_img_4.png" width="110" alt="apple laptop" />
+      </a>
+      <div class="w-100 min-w-0 ps-2 ps-xl-3">
+        <h5 class="d-flex animate-underline mb-2">
+          <a class="d-block fs-sm fw-medium text-truncate animate-target text-decoration-none text-dark" href="shop-product-general-electronics.html">Laptop Apple MacBoo...</a>
+        </h5>
+        <ul class="list-unstyled gap-1 fs-xs mb-0">
+          <li><span class="text-body-secondary">Color:</span><span class="text-dark fw-medium">White</span></li>
+          <li><span class="text-body-secondary">Model:</span><span class="text-dark fw-medium">GB</span></li>
+          <!-- Hidden on XL screens, shows on smaller ones -->
+          <li class="d-xl-none"><span class="text-body-secondary">Price:</span><span class="text-dark fw-medium">$899.00</span></li>
+        </ul>
+        <div class="count-input rounded-2 d-md-none mt-3">
+          <button type="button" class="btn btn-sm btn-icon" data-decrement="" aria-label="Decrement quantity"><i class="ci-minus"></i></button>
+          <input type="number" class="form-control form-control-sm" value="1" readonly="" />
+          <button type="button" class="btn btn-sm btn-icon" data-increment="" aria-label="Increment quantity"><i class="ci-plus"></i></button>
+        </div>
+      </div>
+    </div>
+  </td>
+  <!-- Price visible on small screens (d-xl-none) and hidden on larger screens -->
+  <td class="h6 py-3 d-none d-xl-table-cell">$899.00</td>
+  <!-- Quantity column hidden on small screens, shown on md and up -->
+  <td class="py-3 d-none d-md-table-cell">
+    <div class="count-input">
+      <button type="button" class="btn btn-icon" data-decrement="" aria-label="Decrement quantity"><i class="ci-minus"></i></button>
+      <input type="number" class="form-control" value="1" readonly="" />
+      <button type="button" class="btn btn-icon" data-increment="" aria-label="Increment quantity"><i class="ci-plus"></i></button>
+    </div>
+  </td>
+  <!-- Total column hidden on small screens, shown on md and up -->
+  <td class="h6 py-3 d-none d-md-table-cell">$899.00</td>
+  <td class="text-end py-3 px-0">
+    <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
+  </td>
+</tr>
+
+                       
+
+
                                 <!-- Item 3 -->
-                            <tr class="d-block d-sm-table-row">
-                                <td class="py-3 ps-0">
-                                  <div class="d-flex align-items-center">
-                                    <a class="flex-shrink-0" href="./index.html">
-                                      <img src="../imgs/arrival_right_img_1.png" width="110" alt="smartwatch" />
-                                    </a>
-                                    <div class="w-100 min-w-0 ps-2 ps-xl-3">
-                                      <h5 class="d-flex animate-underline mb-2">
-                                        <a class="d-block fs-sm fw-medium text-truncate animate-target text-decoration-none text-dark" href="./index.html">Smart Watch Series 7</a>
-                                      </h5>
-                                      <ul class="list-unstyled gap-1 fs-xs mb-0">
-                                        <li><span class="text-body-secondary">Color:</span><span class="text-dark fw-medium">White</span></li>
-                                        <li><span class="text-body-secondary">Model:</span><span class="text-dark fw-medium">44mm</span></li>
-                                        <!-- Hidden on XL screens, shows on smaller ones -->
-                                        <li class="d-xl-none"><span class="text-body-secondary">Price:</span><span class="text-dark fw-medium">$429.00</span></li>
-                                      </ul>
-                                      <div class="count-input rounded-2 d-md-none mt-3">
-                                        <button type="button" class="btn btn-sm btn-icon" data-decrement="" aria-label="Decrement quantity"><i class="ci-minus"></i></button>
-                                        <input type="number" class="form-control form-control-sm" value="1" readonly="" />
-                                        <button type="button" class="btn btn-sm btn-icon" data-increment="" aria-label="Increment quantity"><i class="ci-plus"></i></button>
+                                <tr class="d-block d-sm-table-row">
+                                  <td class="py-3 ps-0">
+                                    <div class="d-flex align-items-center">
+                                      <a class="flex-shrink-0" href="./index.html">
+                                        <img src="../imgs/arrival_right_img_1.png" width="110" alt="smartwatch" />
+                                      </a>
+                                      <div class="w-100 min-w-0 ps-2 ps-xl-3">
+                                        <h5 class="d-flex animate-underline mb-2">
+                                          <a class="d-block fs-sm fw-medium text-truncate animate-target text-decoration-none text-dark" href="./index.html">Smart Watch Series 7</a>
+                                        </h5>
+                                        <ul class="list-unstyled gap-1 fs-xs mb-0">
+                                          <li><span class="text-body-secondary">Color:</span><span class="text-dark fw-medium">White</span></li>
+                                          <li><span class="text-body-secondary">Model:</span><span class="text-dark fw-medium">44mm</span></li>
+                                          <!-- Hidden on XL screens, shows on smaller ones -->
+                                          <li class="d-xl-none"><span class="text-body-secondary">Price:</span><span class="text-dark fw-medium">$429.00</span></li>
+                                        </ul>
+                                        <div class="count-input rounded-2 d-md-none mt-3">
+                                          <button type="button" class="btn btn-sm btn-icon" data-decrement="" aria-label="Decrement quantity"><i class="ci-minus"></i></button>
+                                          <input type="number" class="form-control form-control-sm" value="1" readonly="" />
+                                          <button type="button" class="btn btn-sm btn-icon" data-increment="" aria-label="Increment quantity"><i class="ci-plus"></i></button>
+                                        </div>
                                       </div>
                                     </div>
-                                  </div>
-                                </td>
-                                <!-- Price visible on small screens (d-xl-none) and hidden on larger screens -->
-                                <td class="h6 py-3 d-none d-xl-table-cell">$899.00</td>
-                                <!-- Quantity column hidden on small screens, shown on md and up -->
-                                <td class="py-3 d-none d-md-table-cell">
-                                  <div class="count-input">
-                                    <button type="button" class="btn btn-icon" data-decrement="" aria-label="Decrement quantity"><i class="ci-minus"></i></button>
-                                    <input type="number" class="form-control" value="1" readonly="" />
-                                    <button type="button" class="btn btn-icon" data-increment="" aria-label="Increment quantity"><i class="ci-plus"></i></button>
-                                  </div>
-                                </td>
-                                <!-- Total column hidden on small screens, shown on md and up -->
-                                <td class="h6 py-3 d-none d-md-table-cell">$899.00</td>
-                                <td class="text-end py-3 px-0">
-                                  <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
-                                </td>
-                              </tr>
+                                  </td>
+                                  <!-- Price visible on small screens (d-xl-none) and hidden on larger screens -->
+                                  <td class="h6 py-3 d-none d-xl-table-cell">$899.00</td>
+                                  <!-- Quantity column hidden on small screens, shown on md and up -->
+                                  <td class="py-3 d-none d-md-table-cell">
+                                    <div class="count-input">
+                                      <button type="button" class="btn btn-icon" data-decrement="" aria-label="Decrement quantity"><i class="ci-minus"></i></button>
+                                      <input type="number" class="form-control" value="1" readonly="" />
+                                      <button type="button" class="btn btn-icon" data-increment="" aria-label="Increment quantity"><i class="ci-plus"></i></button>
+                                    </div>
+                                  </td>
+                                  <!-- Total column hidden on small screens, shown on md and up -->
+                                  <td class="h6 py-3 d-none d-md-table-cell">$899.00</td>
+                                  <td class="text-end py-3 px-0">
+                                    <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
+                                  </td>
+                                </tr>
+                              
 
                           </tbody>
                         </table>
+                      
+                        <!-- Clear Cart Button Positioned Below the Table for Larger Screens -->
+                        <div class="d-none d-sm-block text-center mt-3">
+                          <button type="button" class="nav-link text-secondary text-decoration-underline text-nowrap py-3 px-0">
+                            Clear Cart
+                          </button>
+                        </div>
                       </div>
+                      
+                      
+                      
                     </div>
                 
                     <!-- Continue -->
@@ -564,7 +578,9 @@
                 </div>
       
                 <!-- Right side (Order Summary) -->
+
                 <div class="col-lg-4 col-sm-12 col-md-4 mb-5 col-12">
+                  <div>
                   <div class="text-center">
                     <!-- checkout -->
                     <div class="bg-body-tertiary rounded-5 p-4 mb-3">
@@ -630,6 +646,8 @@
                     </div>
                   </div>
                 </div>
+                </div>
+                
               </div>
             </div>
           </div>
